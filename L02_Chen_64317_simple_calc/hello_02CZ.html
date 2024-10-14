@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourSurname Simple Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <input type="number" id="number1" placeholder="Enter first number">
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="number2" placeholder="Enter second number">
+    
+    <button onclick="calculate()">=</button>
+    <input type="text" id="result" readonly placeholder="Result">
+
+    <script>
+        function calculate() {
+            // Get input values
+            let number1 = parseFloat(document.getElementById("number1").value);
+            let number2 = parseFloat(document.getElementById("number2").value);
+            let operator = document.getElementById("operators").value;
+            let result;
+
+            // Perform calculation based on selected operator
+            switch (operator) {
+                case "+":
+                    result = number1 + number2;
+                    break;
+                case "-":
+                    result = number1 - number2;
+                    break;
+                case "*":
+                    result = number1 * number2;
+                    break;
+                case "/":
+                    result = number2 !== 0 ? number1 / number2 : "Cannot divide by 0";
+                    break;
+                case "%":
+                    result = number1 % number2;
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            // Display result
+            document.getElementById("result").value = result;
+        }
+    </script>
+
+</body>
+</html>

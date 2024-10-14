@@ -1,101 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>>Chen JavaScript 1</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        input, select, button {
-            margin: 10px;
-        }
-    </style>
+<meta charset=„UTF-8”>
+<p>Zhe Chen 64317 Group 8</p>
+<title>Chen JavaScript 1</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    }
+</style>
 </head>
 <body>
-<p>Zhe Chen 64317 Group8</p>
-<h1>Simple calculator</h1>
-
-<input type="number" id="num1">
-<select id="operator">
-    <option value="+">+</option>
-    <option value="-">-</option>
-    <option value="*">*</option>
-    <option value="/">/</option>
-</select>
-<input type="number" id="num2">
-<button onclick="calculate()">=</button>
-<input type="text" id="result" readonly>
-
-<h2 id="caption">Welcome</h2>
-<button onclick="setSurname()">Surname</button>
-<button onclick="setName()">Name</button>
-<button onclick="setId()">ID</button>
-
-<p>Surname:</p>
-<input type="text" id="surnameInput" oninput="updateSurname()">
-
-<p>Name:</p>
-<input type="text" id="nameInput" oninput="updateName()">
-
-<p>ID:</p>
-<input type="text" id="idInput" oninput="updateId()">
-
+<p>Site creator: Chen</p>
+<p>JavaScript in HTML</p>
+<p id="demoCZ">Greet</p>
 <script>
-    function calculate() {
-        var num1 = parseFloat(document.getElementById('num1').value);
-        var num2 = parseFloat(document.getElementById('num2').value);
-        var operator = document.getElementById('operator').value;
-        var result;
-
-        if (isNaN(num1) || isNaN(num2)) {
-            result = "Enter numbers";
-        } else {
-            switch (operator) {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    result = num2 !== 0 ? num1 / num2 : "Can't divide by 0";
-                    break;
-                default:
-                    result = "Invalid operator";
-            }
-        }
-        document.getElementById('result').value = result;
-    }
-
-    function setSurname() {
-        document.getElementById('caption').innerHTML = "Surname";
-    }
-
-    function setName() {
-        document.getElementById('caption').innerHTML = "Name";
-    }
-
-    function setId() {
-        document.getElementById('caption').innerHTML = "ID";
-    }
-
-    function updateSurname() {
-        document.getElementById('caption').innerHTML = document.getElementById('surnameInput').value;
-    }
-
-    function updateName() {
-        document.getElementById('caption').innerHTML = document.getElementById('nameInput').value;
-    }
-
-    function updateId() {
-        document.getElementById('caption').innerHTML = document.getElementById('idInput').value;
-    }
+let xCZ = "Welcome to the world of JavaScript";
+document.getElementById("demo").innerHTML = xCZ;
 </script>
-
 </body>
 </html>

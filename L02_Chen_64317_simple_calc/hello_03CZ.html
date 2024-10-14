@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title> Chen Zhe 64317 3 </title>
+ <meta charset="UTF-8">
+ <style>
+ body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+ }
+ </style>
+ </head>
+ <body>
+ <h1>Select caption</h1>
+ <h2 id="caption"></h2>
+ <button onclick=surname()>Surname </button>
+ <button onclick=name()>Name</button>
+ <button onclick=id()>ID number</button>
+ <br><label>Surname:</label>
+ <input type="text" id="surname" onchange= surnameEnter()>
+ <br><label>Name:</label>
+ <input type="text" id="name" onchange= nameEnter()>
+ <br><label> ID number:</label>
+ <input type="text" id="id" onchange= idEnter()>
+
+ <script>
+ function surname(){
+document.getElementById('caption').innerHTML = "Surname";
+ }
+ function name(){
+    document.getElementById('caption').innerHTML = "Name";
+ }
+ function idStudent(){
+    document.getElementById('caption').innerHTML = "ID";
+ }
+
+ function surnameEnter(){
+ let xCZ = document.getElementById("surname").value;
+ document.getElementById("caption").innerHTML = xCZ;
+ }
+ function nameEnter(){
+    let yCZ = document.getElementById("name").value;
+    document.getElementById("caption").innerHTML = yCZ;
+ }
+ function idEnter (){
+    let zCZ = document.getElementById("id").value;
+    document.getElementById("caption").innerHTML = zCZ;
+ }
+ </script>
+ </body>
+</html>

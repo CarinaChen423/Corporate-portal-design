@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Zhe Chen 64317 Audio & Image</title>
+    <link rel="stylesheet" href="css/styleCZ.css">
+    <script src="js/scriptCZ.js" defer></script>
+    
+</head>
+<body>
+    <header id="page_headerChen">
+        <h1>ZHE CHEN 64317 Audio & Image</h1>
+        <h3>Lab 3</h3>
+        <h5>Audio and Images - Example</h5>
+    </header>
+    
+    <section id="startChen">
+        <p>Our home pet.</p>
+        <div class="container">
+            <button onclick="changeImageRandom()">Random Change Image</button>
+            <img id="animal" src="Img/cat.jpg" title="cat" onclick="changeAnimalSurname()">
+            <button onclick="changeAudioRandom()">Random Change Audio</button>
+        </div>
+    </section>
+    
+    <section class="musicsChen">
+        <audio controls id="musicsChen" autoplay hidden loop>
+            <source id="myMusicChen" src="Audio/cat.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <section id="endChen">
+        <br>
+        <label id="test1"></label><br>
+        <label id="test2"></label><br>
+        <label id="test3"></label><br>
+        <label id="score">Score: 0</label><br>
+    </section>
+    
+    <footer id="page_footerChen">
+        Vistula 2024 &copy;Chen
+    </footer>
+</body>
+</html>

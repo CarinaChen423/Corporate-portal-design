@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Surname</title>
+    <link rel="stylesheet" href="Style_Chen.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body onload="startCalculator()">
+
+    <header id="page_header">
+        <h1>Calculator Extra</h1>
+    </header>
+
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <h3>Calculator</h3>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <span id="calculatorSelect">
+            <select id="selectOperator"></select>
+        </span>
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button onclick="calculate()">=</button>
+        <input type="text" id="result" readonly>
+        <br><label id="error"></label>
+        <br>
+        <button onclick="toOperators()">Change Operators</button>
+        <button onclick="seeHistory()">View Calculation History</button>
+    </section>
+
+    <!-- Operators Section -->
+    <section id="operators" style="display: none;">
+        <h3>Add or Remove Operator</h3>
+        <label>Remove operator:</label>
+        <span id="removeSelect"></span>
+        <button onclick="removeOperator()">Remove Operator</button>
+        <br>
+        <label>Add operator:</label>
+        <select id="selectAddOperator"></select>
+        <button onclick="addOperator()">Add Operator</button>
+        <br><br>
+        <button onclick="toCalculator()">Return to Calculator</button>
+        <button onclick="seeHistory()">View Calculation History</button>
+    </section>
+
+    <!-- Memory Section -->
+    <section id="memory" style="display: none;">
+        <h3>Calculation History</h3>
+        <table id="memoryCalculations"></table>
+        <br><br>
+        <button onclick="toCalculator()">Return to Calculator</button>
+        <button onclick="toOperators()">Change Operators</button>
+    </section>
+
+    <footer id="page_footer">
+        <p>&copy; 2024 Calculator App</p>
+    </footer>
+
+</body>
+</html>

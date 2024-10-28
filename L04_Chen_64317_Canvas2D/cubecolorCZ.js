@@ -1,4 +1,4 @@
-const canvas = document.getElementById('myCanvas');
+const canvas = document.getElementById('myCanvasCZ');
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.globalAlpha = 0.8; 

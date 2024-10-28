@@ -1,5 +1,5 @@
 
-const canvas = document.getElementById('myCanvas');
+const canvas = document.getElementById('myCanvasCZ');
     const ctx = canvas.getContext('2d');
 
     function getRandomColorCZ() {

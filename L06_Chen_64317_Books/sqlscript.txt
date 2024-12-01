@@ -1,0 +1,6 @@
+Press Ctrl+Enter to execute query
+CREATE TABLE shop_Chen.books( book_id INTEGER NOT NULL AUTO_INCREMENT UNIQUE, title VARCHAR(70), author VARCHAR(70), price DOUBLE(5, 2), PRIMARY KEY(book_id) );
+CREATE TABLE shop_chen.books( book_id INTEGER NOT NULL AUTO_INCREMENT UNIQUE, title VARCHAR(70), author VARCHAR(70), price DOUBLE(5, 2), PRIMARY KEY(book_id) );
+CREATE TABLE shop_chen.books( book_id INTEGER NOT NULL AUTO_INCREMENT UNIQUE, title VARCHAR(70), author VARCHAR(70), price DOUBLE(5, 2), PRIMARY KEY(book_id) );
+INSERT INTO shop_chen.books ( book_id , title , author , price ) VALUES (1,'Pro CSS and HTML Design Patterns','Michael Bowers',44.99) , (2,'Pro PayPal E-Commerce','Damon Williams',59.99) , (3,'The Complete Robot','Isaac Asimov',8.95) , (4,'Foundation','Isaac ASimov',8.95) , (5,'Area 7','Matthew Reilly',5.99) , (6,'Term Limits','Vince Flynn',6.99);
+SELECT * FROM `books`

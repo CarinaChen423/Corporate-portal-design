@@ -1,0 +1,25 @@
+h1, h2, h3, h6 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+article, footer {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
